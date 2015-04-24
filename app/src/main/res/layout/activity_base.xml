@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".BaseActivity"
+    android:weightSum="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#ff30be30">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area Programmable"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprinkler"
+        android:id="@+id/textView2"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Sprinkler"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="#ff3677ff"
+        android:padding="5dp"
+        android:ellipsize="none"
+        android:enabled="true"
+        android:onClick="openProgrammer"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Sprinkler"
+        android:id="@+id/button2"
+        android:layout_marginTop="45dp"
+        android:background="#ff3677ff"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:enabled="true"
+        android:onClick="openRun" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to APS"
+        android:id="@+id/button9"
+        android:layout_marginTop="45dp"
+        android:background="#ff3677ff"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:enabled="true"
+        android:onClick="blueRun"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Address:"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginTop="200dp" />
+
+</LinearLayout>

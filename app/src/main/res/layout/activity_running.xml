@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.ensc38.areaprogrammablesprinkler.ProgramActivity"
+    android:background="#ff30be30"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do?"
+        android:id="@+id/textView3"
+        android:layout_marginBottom="40dp"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Program"
+        android:id="@+id/button3"
+        android:background="#ff3677ff"
+        android:layout_marginTop="200dp"
+        android:padding="5dp"
+        android:textSize="30dp"
+        android:singleLine="false"
+        android:enabled="true"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Program"
+        android:id="@+id/button10"
+        android:background="#ff3677ff"
+        android:layout_marginTop="75dp"
+        android:padding="5dp"
+        android:textSize="30dp"
+        android:singleLine="false"
+        android:enabled="true"
+        android:onClick="onRemove"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button4"
+        android:background="#ff3677ff"
+        android:layout_marginTop="75dp"
+        android:padding="5dp"
+        android:textSize="30dp"
+        android:singleLine="false"
+        android:enabled="true"
+        android:onClick="closeRunning"
+        android:clickable="true" />
+
+</LinearLayout>
+
